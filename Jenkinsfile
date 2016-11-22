@@ -1,5 +1,5 @@
 node {
-    dir("${projectworkspace}@script") {
+    dir("${projectWorkspace}@script") {
         ansiblePlaybook(
             playbook: 'tests/jenkins.yml',
             credentialsId: 'bndabbs',
