@@ -1,5 +1,0 @@
----
-
-- name: Say Hello
-  debug:
-    msg: "Hello World"
