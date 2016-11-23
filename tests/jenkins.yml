@@ -23,7 +23,7 @@
 
 - hosts: ec2hosts
   roles:
-      - Ansible2
+      - jenkins_ansible
 
 - hosts: localhost
   connection: local
