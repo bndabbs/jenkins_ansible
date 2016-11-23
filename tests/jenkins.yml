@@ -8,6 +8,7 @@
         instance_type: t2.micro
         image: ami-b63769a1
         wait: yes
+        region: us-east-1
         vpc_subnet_id: subnet-3d803e10
         assign_public_ip: yes
         group_id: sg-d1e277ac
