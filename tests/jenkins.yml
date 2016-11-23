@@ -10,7 +10,7 @@
         wait: yes
         vpc_subnet_id: subnet-3d803e10
         assign_public_ip: yes
-        group: sg-d1e277ac
+        group_id: sg-d1e277ac
         key_name: cs
         count: 1
       register: ec2
