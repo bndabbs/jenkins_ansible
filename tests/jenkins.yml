@@ -10,7 +10,6 @@
         wait: yes
         region: us-east-1
         vpc_subnet_id: subnet-3d803e10
-        assign_public_ip: yes
         group_id: sg-d1e277ac
         key_name: cs
         count: 1
@@ -18,7 +17,7 @@
 
     - name: Add instances to host group
       add_host:
-        hostname: "{{ item.public_ip }}"
+        hostname: "{{ item.private_ip }}"
         groups: ec2hosts
       with_items: "{{ ec2.instances }}" 
 
