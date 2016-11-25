@@ -21,6 +21,12 @@
         hostname: "{{ item.private_ip }}"
         groups: ec2hosts
       with_items: "{{ ec2.instances }}" 
+    
+    - name: Wait for port 22 on instances to be available
+      wait_for:
+          host: "{{ item.private_ip }}"
+          port: 22
+      with_items: "{{ ec2.instances }}"
 
 - hosts: ec2hosts
   roles:
