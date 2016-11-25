@@ -29,6 +29,8 @@
       with_items: "{{ ec2.instances }}"
 
 - hosts: ec2hosts
+  remote_user: ec2-user
+  become: yes
   roles:
       - jenkins_ansible
 
