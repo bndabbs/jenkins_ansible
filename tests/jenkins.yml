@@ -9,8 +9,9 @@
         image: ami-b63769a1
         wait: yes
         region: us-east-1
+        assign_public_ip: false
         vpc_subnet_id: subnet-3d803e10
-        group_id: sg-d1e277ac
+        group_id: sg-bf8b1dc2
         key_name: cs
         count: 1
       register: ec2
